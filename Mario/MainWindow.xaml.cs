@@ -13,6 +13,8 @@ namespace PinoteGame
         public MainWindow()
         {
             InitializeComponent();
+            int x = 3;
+            int y = 5;
         }
 
         private void OnPlayCardClick(object sender, RoutedEventArgs e)
