@@ -19,6 +19,8 @@ namespace Mario
         public MainWindow()
         {
             InitializeComponent();
+            int x = 3;
+            int y = 5;
         }
     }
 }
