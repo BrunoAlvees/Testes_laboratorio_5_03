@@ -1,12 +1,25 @@
-﻿<Window x:Class="Mario.MainWindow"
+﻿<Window x:Class="PinoteGame.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Mario"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Pinote Game" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
 
+        <!-- Título -->
+        <TextBlock Text="Jogo de Cartas - Pinote" FontSize="24" HorizontalAlignment="Center" Margin="10" Grid.Row="0"/>
+
+        <!-- Área de Jogo -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+            <Button Content="Jogar Carta" Width="100" Height="50" Click="OnPlayCardClick"/>
+            <Button Content="Pinote" Width="100" Height="50" Margin="10" Click="OnPinoteClick"/>
+            <Button Content="Mostrar Mão" Width="100" Height="50" Click="OnShowHandClick"/>
+        </StackPanel>
+
+        <!-- Pontuação -->
+        <TextBlock x:Name="scoreText" Text="Pontuação: 0" FontSize="18" HorizontalAlignment="Center" Grid.Row="2"/>
     </Grid>
 </Window>
