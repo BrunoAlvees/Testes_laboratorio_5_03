@@ -13,8 +13,8 @@ namespace PinoteGame
         public MainWindow()
         {
             InitializeComponent();
-            int x = 3;
-            int y = 5;
+            int x = 72;
+            int y = 88;
         }
 
         private void OnPlayCardClick(object sender, RoutedEventArgs e)
@@ -51,6 +51,7 @@ namespace PinoteGame
         {
             scoreText.Text = $"Pontuação: {playerScore}";
         }
+
 
         private bool HasPinote()
         {
